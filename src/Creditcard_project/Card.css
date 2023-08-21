@@ -1,0 +1,22 @@
+.card_contianer{
+    position: relative;
+}
+
+.card_container:hover .front_contianer{
+    transform: rotateY(180deg);
+}
+
+.card{
+    position: absolute;
+    transition: all 900ms ease-in-out;
+    backface-visibility: hidden;
+}
+
+.card_container:hover .back_contianer{
+    transform: rotateY(0deg);
+}
+
+.back_contianer{
+    transform: rotateY(180deg);
+}
+ 
