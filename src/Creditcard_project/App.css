@@ -2,8 +2,25 @@
     position: absolute;
     bottom: 0px;
     right: 36%;
+    /* height: 100%; */
 }
 
 body{
     background: #5c4e4e;
+}
+
+@media (max-width: 468px){
+    .input{
+        /* border: 1px solid white; */
+        /* margin-top: 350px; */
+        height: 100%;
+        width: 200px;
+        position: absolute;
+        top: 450px;
+    }
+
+    .input input{
+        width: 290px;
+        /* width: 100%; */
+    }
 }

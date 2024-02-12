@@ -13,17 +13,17 @@ export default function Card(props) {
 }
 
 return <div className='card_container d-flex justify-content-center'>
-        <div className="card front_contianer bg-primary" style={{ height: '40vh', width: "30vw", borderRadius: "30px" }}>
+        <div className="card front_contianer bg-primary">
             <div className="row mt-4 ml-4">
-                <div className='col-xl-6 col-lg-6'>
-                    <img src='../.././assets/img/cardChip (2).jpg' width={40} />
+                <div className='col-lg-6'>
+                    <img src='../.././assets/img/cardChip (2).jpg' className='chip'/>
                 </div>
-                <div className='col-xl-6 col-lg-6'>
-                    <img src="../.././assets/img/visa.jpg" width={140} />
+                <div className='col-lg-6'>
+                    <img src="../.././assets/img/visa.jpg" className='visa'/>
                 </div>
             </div>
-            <div className="row mt-4 ml-4">
-                <div className='col-xl-12 col-lg-12'>
+            <div className="row mt-4 ml-4 cardNumber">
+                <div className='col-lg-12'>
                     {
                         data == '' ?
                             <h2>4142 5678 **** ****</h2> :
@@ -33,14 +33,14 @@ return <div className='card_container d-flex justify-content-center'>
                 </div>
             </div>
             <div className="row mt-4 ml-2">
-                <div className='col-xl-7 col-lg-7 mt-4'>
+                <div className='col-lg-7 mt-4 cardName'>
                     {name == '' ?
                         <h4>YOUR NAME HERE</h4> :
                         <h4>{name.map(ob => ob)}</h4>
                     }
 
                 </div>
-                <div className='col-xl-5 col-lg-5 pl-5'>
+                <div className='col-lg-5 pl-5 validName'>
                     <b>valid thru</b>
                     <br />
                     {month == "" ? <b>**/**</b> :
@@ -50,21 +50,21 @@ return <div className='card_container d-flex justify-content-center'>
                 </div>
             </div>
         </div>
-        <div className="card back_contianer bg-primary" style={{ height: '40vh', width: "30vw", borderRadius: "30px" }}>
+        <div className="card back_contianer bg-primary">
             <div className="row mt-4">
-                <div className='col-xl-12 col-lg-12'>
-                    <img src="../.././assets/img/atmBack (2).jpg" style={{ width: '410px' }} />
+                <div className='col-lg-12'>
+                    <img src="../.././assets/img/atmBack (2).jpg" className='blackStrip'/>
                 </div>
             </div>
-            <div className="row mt-3 ml-2">
-                <div className='col-xl-8 col-lg-8'>
-                    {cvv == "" ? <h1 className='form-control' style={{ width: '310px', height: "40px" }}></h1> :
-                        <h1 className='form-control cvv' style={{ width: '310px', height: "40px" }}>{cvv.map(ob => ob)}</h1>}
+            <div className="row mt-3 ml-2" style={{height:'210px'}}>
+                <div className='col-lg-8'>
+                    {cvv == "" ? <h1 className='form-control value' style={{height:'30px'}}></h1> :
+                        <h1 className='form-control value' style={{height:'30px'}}>{cvv.map(ob => ob)}</h1>}
                 </div>
             </div>
             <div className="row mt-4 ml-2">
-                <div className='col-xl-10 col-lg-10'>
-                    <img src="../.././assets/img/Visa2.jpg" style={{ width: '350px' }} />
+                <div className='col-lg-10'>
+                    <img src="../.././assets/img/Visa2.jpg" className='backVisa'/>
                 </div>
             </div>
         </div>

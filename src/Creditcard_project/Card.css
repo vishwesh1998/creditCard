@@ -1,5 +1,18 @@
 .card_contianer{
     position: relative;
+    /* width: 500px; */
+}
+
+.front_contianer{
+    width: 450px;
+    height: 270px;
+    border-radius: 30px;
+}
+
+.back_contianer{
+    width: 450px;
+    height: 270px;
+    border-radius: 30px;
 }
 
 .card_container:hover .front_contianer{
@@ -19,4 +32,86 @@
 .back_contianer{
     transform: rotateY(180deg);
 }
+
+.chip{
+    width: 40px;
+}
+
+.visa{
+    width: 140px;
+}
+
+.blackStrip{
+    width: 448px;
+}
+
+.backVisa{
+    /* font-size: 50px; */
+    height: 100px;
+}
  
+@media (max-width: 468px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .front_contianer{
+        width: 340px;
+    }
+
+    .back_contianer{
+        width: 340px;
+    }
+
+    .chip{
+        width: 30px;
+        margin-bottom: 5px
+    }
+
+    .visa{
+        width: 120px;
+        /* height: 70px; */
+        position: relative;
+        top: -35px;
+        left: 140px;
+    }
+
+    .cardNumber{
+        width: 340px;
+        /* font-size: 5px; */
+        height: 5px;
+        position: relative;
+        right: 15px;
+        top: -28px;
+        margin-right: 2px;
+    }
+
+    .cardName{
+        font-size: 15px;
+        /* margin-bottom: 20px; */
+        position: relative;
+        top: -18px;
+    }
+
+    .validName{
+        position: relative;
+        top: -14px;
+        left: -28px;
+    }
+
+    .blackStrip{
+        width: 338px;
+    }
+
+    .value{
+        width: 220px;
+    }
+
+    .backVisa{
+        /* font-size: 20px; */
+        /* margin-top: 2   rem; */
+        height: 70px;
+    }
+
+}
