@@ -85,6 +85,7 @@
         right: 15px;
         top: -28px;
         margin-right: 2px;
+        margin-bottom: 13px;
     }
 
     .cardName{
@@ -92,6 +93,7 @@
         /* margin-bottom: 20px; */
         position: relative;
         top: -18px;
+        margin-top: 19px;
     }
 
     .validName{

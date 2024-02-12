@@ -6,7 +6,8 @@
 }
 
 body{
-    background: #5c4e4e;
+    /* background: #5c4e4e; */
+    background: #00415A;
 }
 
 @media (max-width: 468px){

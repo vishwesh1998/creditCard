@@ -13,7 +13,7 @@ export default function Card(props) {
 }
 
 return <div className='card_container d-flex justify-content-center'>
-        <div className="card front_contianer bg-primary">
+        <div className="card front_contianer" style={{background:'#009bd6'}}>
             <div className="row mt-4 ml-4">
                 <div className='col-lg-6'>
                     <img src='../.././assets/img/cardChip (2).jpg' className='chip'/>
@@ -50,7 +50,7 @@ return <div className='card_container d-flex justify-content-center'>
                 </div>
             </div>
         </div>
-        <div className="card back_contianer bg-primary">
+        <div className="card back_contianer" style={{background:'#009bd6'}}>
             <div className="row mt-4">
                 <div className='col-lg-12'>
                     <img src="../.././assets/img/atmBack (2).jpg" className='blackStrip'/>
